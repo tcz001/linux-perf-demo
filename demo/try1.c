@@ -94,9 +94,6 @@ main (int argc, char *argv[])
     }
     n = atoi(argv[1]);
 
-    printf("Press return to begin:\n");
-    fgets(buf, sizeof(buf), stdin);
-
     printf("1:  bar1(%d)=%d\n", n, bar1(n));
     printf("2:  bar1(%d)=%d\n", n, bar1(n));
     printf("2b: bar2(%d)=%d\n", n, bar2(n));
