@@ -10,7 +10,7 @@ RUN apt-get update && \
 	    nginx
 RUN apt-get install -y \
 	    cmake libjson-c-dev libwebsockets-dev
-RUN mkdir -p /home/root && git clone https://github.com/tsl0922/ttyd.git /home/root/ttyd
+RUN mkdir -p /home/root && git clone --depth 1 https://github.com/tsl0922/ttyd.git /home/root/ttyd
 WORKDIR /home/root/ttyd
 RUN mkdir build && cd build  && \
 	    cmake .. && \
